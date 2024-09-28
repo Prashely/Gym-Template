@@ -7,6 +7,7 @@ import { MdOutlineEmail } from "react-icons/md";
 const ContactUs = () => {
   return (
     <section className="w-full flex flex-col items-center justify-center my-6">
+      <h2 className="text-4xl font-bold text-center mb-4">CONTACTS</h2>
       <div className="bg-gray-900 p-4 rounded-2xl">
         <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
           <div className="mt-8 overflow-hidden">
