@@ -7,6 +7,7 @@ import Benefits from "../sections/homepage/Benefits";
 import FAQs from "../sections/homepage/FAQs";
 import ContactUs from "../sections/homepage/ContactUs";
 import Testimonials from "../sections/homepage/Testimonials";
+import Pricing from "../sections/homepage/Pricing";
 
 const HomePage = () => {
   return (
@@ -18,6 +19,7 @@ const HomePage = () => {
         <HeroSection />
         <WhyUs />
         <Benefits />
+        <Pricing />
         <Testimonials />
         <ContactUs />
         <FAQs />
