@@ -10,7 +10,7 @@ const ContactUs = () => {
       <h2 className="text-4xl text-black font-bold text-center mb-4">
         CONTACTS
       </h2>
-      <div className="bg-bgSecondary p-4 rounded-2xl">
+      <div className="bg-bgSecondary p-4 rounded-2xl w-[95vw] md:w-full">
         <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
           <div className="mt-8 overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2">
