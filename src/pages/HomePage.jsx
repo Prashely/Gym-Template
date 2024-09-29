@@ -8,6 +8,7 @@ import FAQs from "../sections/homepage/FAQs";
 import ContactUs from "../sections/homepage/ContactUs";
 import Testimonials from "../sections/homepage/Testimonials";
 import Pricing from "../sections/homepage/Pricing";
+import ImageGrid from "../sections/homepage/ImageGrind";
 
 const HomePage = () => {
   return (
@@ -22,6 +23,7 @@ const HomePage = () => {
         <Pricing />
         <Testimonials />
         <ContactUs />
+        <ImageGrid />
         <FAQs />
       </main>
       <footer>
