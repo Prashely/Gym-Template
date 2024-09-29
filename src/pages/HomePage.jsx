@@ -11,7 +11,7 @@ import Pricing from "../sections/homepage/Pricing";
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-bgPrimary">
       <nav>
         <NavBar />
       </nav>
