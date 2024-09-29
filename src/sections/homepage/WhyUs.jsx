@@ -1,5 +1,9 @@
 import React from "react";
 import { GoDot } from "react-icons/go";
+import Reasons from "../../assets/components/ui/Reasons";
+import Twelve from "../../assets/images/12.jpg";
+import Four from "../../assets/images/4.jpg";
+import Eleven from "../../assets/images/11.jpg";
 
 const WhyUs = () => {
   return (
@@ -10,21 +14,24 @@ const WhyUs = () => {
       <div className="w-full flex flex-col justify-center">
         <div className="carousel carousel-center bg-bgPrimary rounded-box space-x-6 p-4">
           <div id="item1" className="carousel-item">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
-              className="rounded-box"
+            <Reasons
+              imageSrc={Twelve}
+              title="Lorem Ipsum"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             />
           </div>
           <div id="item2" className="carousel-item">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
-              className="rounded-box"
+            <Reasons
+              imageSrc={Four}
+              title="Dolor Sit Amet"
+              description="Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             />
           </div>
           <div id="item3" className="carousel-item">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
-              className="rounded-box"
+            <Reasons
+              imageSrc={Eleven}
+              title="Consectetur Adipiscing"
+              description="Ut enim ad minim veniam, quis nostrud exercitation ullamco."
             />
           </div>
         </div>

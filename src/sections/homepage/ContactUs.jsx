@@ -13,7 +13,7 @@ const ContactUs = () => {
       <div className="bg-bgSecondary p-4 rounded-2xl w-[95vw] md:w-full">
         <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
           <div className="mt-8 overflow-hidden">
-            <div className="grid grid-cols-1 md:grid-cols-2">
+            <div className=" grid grid-cols-1 md:grid-cols-2">
               <div className="p-6 mr-2 bg-gray-100 dark:bg-buttonIcons rounded-2xl">
                 <h1 className="text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight">
                   Get in touch
