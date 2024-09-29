@@ -4,7 +4,7 @@ const FAQs = () => {
   return (
     <section className="w-full  flex flex-col items-center justify-center bg-bgPrimary sm:gap-2 my-6">
       <h2 className="text-4xl font-bold text-black mb-4">FAQs</h2>
-      <div className="sm:w-[85vw]">
+      <div className="w-[95vw]">
         <div className="collapse collapse-arrow bg-bgTertiary mb-0.5 ">
           <input type="radio" name="my-accordion-2" defaultChecked />
           <div className="collapse-title text-xl font-medium">

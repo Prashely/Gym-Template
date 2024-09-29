@@ -3,10 +3,9 @@ import React, { useState } from "react";
 const Pricing = () => {
   const [activeTab, setActiveTab] = useState("1m");
 
-  // Pricing data with actual values from the previous table
   const pricingData = {
     scholars: {
-      label: "Scholars (under 19)",
+      label: "Scholars (<19)",
       prices: {
         "1m": "R300",
         "3m": "R250",
@@ -16,7 +15,17 @@ const Pricing = () => {
       },
     },
     students: {
-      label: "Students/Pensioners",
+      label: "Students(<23)",
+      prices: {
+        "1m": "R500",
+        "3m": "R400",
+        "6m": "R300",
+        "1yr": "R241",
+        "2yr": "---",
+      },
+    },
+    Pensioners: {
+      label: "Pensioners(>65)",
       prices: {
         "1m": "R500",
         "3m": "R400",
@@ -57,15 +66,19 @@ const Pricing = () => {
   ];
 
   return (
-    <section className="my-6">
-      <h2 className="text-4xl font-bold text-black mb-4 text-center">FAQs</h2>
-      <div className="container w-3 p-4 border-2 border-black rounded-2xl">
+    <section className="w-full flex flex-col justify-center items-center my-8">
+      <h2 className="text-4xl font-bold text-black mb-4 text-center">
+        PRICING
+      </h2>
+      <div className="container w-[90vw] p-4 border-2 bg-black border-black rounded-2xl lg:shadow-none shadow-lg lg:relative relative lg:top-0 top-8 mb-8">
         {/* Tabs for Months */}
-        <div className="tabs tabs-boxed flex justify-center mb-4 lg:hidden">
+        <div className="tabs tabs-boxed flex justify-center mb-3 bg-black lg:hidden ">
           {tabs.map((tab) => (
             <a
               key={tab.id}
-              className={`tab ${activeTab === tab.id ? "tab-active" : ""}`}
+              className={`tab ${
+                activeTab === tab.id ? "tab-active bg-white text-black" : ""
+              }`}
               onClick={() => setActiveTab(tab.id)}
             >
               {tab.label}
@@ -75,20 +88,23 @@ const Pricing = () => {
 
         {/* Responsive grid for small screens */}
         <div className="lg:hidden grid grid-cols-2 gap-4">
-          <div className="flex flex-col items-end text-right space-y-2">
+          <div className="flex flex-col text-center text-white font-light space-y-6 my-4">
             {Object.values(pricingData).map((category, index) => (
-              <div key={index} className="font-semibold text-lg">
+              <div key={index} className="text-lg">
                 {category.label}
               </div>
             ))}
           </div>
-          <div className="flex flex-col space-y-2">
+          <div className="flex flex-col space-y-6 my-4">
             {Object.values(pricingData).map((category, index) => (
               <div
                 key={index}
-                className="text-green-500 font-bold text-lg text-center"
+                className="text-hoverEffect font-black text-lg text-center"
               >
                 {category.prices[activeTab]}
+                <span className="text-xs text-gray-400 font-light ml-0.5">
+                  p/m
+                </span>
               </div>
             ))}
           </div>
@@ -116,6 +132,7 @@ const Pricing = () => {
                   {tabs.map((tab) => (
                     <td key={tab.id} className="border border-gray-300 p-4">
                       {category.prices[tab.id]}
+                      <span className="text-xs text-white font-light">p/m</span>
                     </td>
                   ))}
                 </tr>
@@ -123,6 +140,11 @@ const Pricing = () => {
             </tbody>
           </table>
         </div>
+      </div>
+      <div>
+        <button className="btn btn-wide mt-4 bg-black text-white">
+          Download Prices
+        </button>
       </div>
     </section>
   );
