@@ -2,8 +2,11 @@ import React from "react";
 import { GoDot } from "react-icons/go";
 import Reasons from "../../assets/components/ui/Reasons";
 import Twelve from "../../assets/images/12.jpg";
-import Four from "../../assets/images/4.jpg";
+import Seven from "../../assets/images/7.jpg";
 import Eleven from "../../assets/images/11.jpg";
+import { BiDumbbell } from "react-icons/bi";
+import { HiUserGroup } from "react-icons/hi2";
+import { IoMdPricetags } from "react-icons/io";
 
 const WhyUs = () => {
   return (
@@ -16,22 +19,25 @@ const WhyUs = () => {
           <div id="item1" className="carousel-item">
             <Reasons
               imageSrc={Twelve}
-              title="Lorem Ipsum"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              icon={<BiDumbbell />}
+              title="Personal Trainer"
+              description="We have coaches with a ton of experience ready to help you achieve all your body goals"
             />
           </div>
           <div id="item2" className="carousel-item">
             <Reasons
-              imageSrc={Four}
-              title="Dolor Sit Amet"
-              description="Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              imageSrc={Seven}
+              icon={<HiUserGroup />}
+              title="Group Classes"
+              description="Want to stay motivated and consistent in your fitness Journey, Health Zone offers a variety of group classes to help you stay consistent and reach your body goals"
             />
           </div>
           <div id="item3" className="carousel-item">
             <Reasons
               imageSrc={Eleven}
-              title="Consectetur Adipiscing"
-              description="Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+              icon={<IoMdPricetags />}
+              title="Variety of Plans"
+              description="Are you scholar, student, spouse, parent or even a grandparent? Health Zone offers a variety of plans that suit your your budget."
             />
           </div>
         </div>
