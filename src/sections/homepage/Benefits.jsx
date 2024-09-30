@@ -36,30 +36,31 @@ const Benefits = () => {
         <div>
           <ul className="flex flex-col justify-center gap-2 text-lg ">
             <li className="flex items-center">
-              <FaRegCheckCircle className="mr-2 text-2xl font-black" /> Free
-              internet
+              <FaRegCheckCircle className="text-yellow-500 mr-2 text-2xl font-black" />{" "}
+              Free internet
             </li>
             <li className="flex items-center">
-              <FaRegCheckCircle className="mr-2 text-2xl font-black" /> Showers
-              & Steam Rooms
+              <FaRegCheckCircle className="text-yellow-500 mr-2 text-2xl font-black" />{" "}
+              Showers & Steam Rooms
             </li>
             <li className="flex items-center">
-              <FaRegCheckCircle className="mr-2 text-2xl font-black" /> Flexible
-              class schedules
+              <FaRegCheckCircle className="text-yellow-500 mr-2 text-2xl font-black" />{" "}
+              Flexible class schedules
             </li>
             <li className="flex items-center">
-              <FaRegCheckCircle className="mr-2 text-2xl font-black" /> Expert
-              coaching
+              <FaRegCheckCircle className="text-yellow-500 mr-2 text-2xl font-black" />{" "}
+              Expert coaching
             </li>
             <li className="flex items-center">
-              <FaRegCheckCircle className="mr-2 text-2xl font-black" /> Parking
+              <FaRegCheckCircle className="text-yellow-500 mr-2 text-2xl font-black" />{" "}
+              Parking
             </li>
           </ul>
         </div>
 
         {/* Call to Action */}
         <button className="mt-6 px-6 py-3 bg-yellow-500 text-black font-bold rounded-md">
-          Learn More
+          Join Us
         </button>
       </div>
     </section>
