@@ -11,7 +11,11 @@ const FAQs = () => {
             Do I need to be Fit to join the gym?
           </div>
           <div className="collapse-content">
-            <p>hello</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              sapiente quos quod labore vel inventore harum deleniti
+              consequuntur nesciunt, rem sequi, rerum magnam, illum?
+            </p>
           </div>
         </div>
         <div className="collapse collapse-arrow bg-bgTertiary mb-0.5">
@@ -20,7 +24,12 @@ const FAQs = () => {
             Can I join as a beginner?
           </div>
           <div className="collapse-content">
-            <p>hello</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id animi
+              quam, officiis asperiores voluptatibus officia accusantium placeat
+              facere. Sapiente, laboriosam commodi. Repellendus sunt nihil vitae
+              sequi blanditiis! Ducimus, iusto culpa.
+            </p>
           </div>
         </div>
         <div className="collapse collapse-arrow bg-bgTertiary mb-0.5">
@@ -29,7 +38,11 @@ const FAQs = () => {
             Can I cancel my subscription anytime?
           </div>
           <div className="collapse-content">
-            <p>hello</p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
+              sequi facilis exercitationem animi excepturi odit, quaerat ipsam
+              minima ipsa aut.
+            </p>
           </div>
         </div>
         <div className="collapse collapse-arrow bg-bgTertiary mb-0.5">
@@ -38,7 +51,12 @@ const FAQs = () => {
             What are the gym's operating hours?
           </div>
           <div className="collapse-content">
-            <p>hello</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              quae consectetur atque, quasi vitae consequatur labore excepturi,
+              doloremque veniam dignissimos blanditiis eius ratione esse, at
+              magnam voluptate sapiente praesentium magni!
+            </p>
           </div>
         </div>
       </div>

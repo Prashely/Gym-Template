@@ -19,7 +19,7 @@ const ContactUs = () => {
                   Get in touch
                 </h1>
                 <p className="text-normal text-lg sm:text-2xl font-medium text-white dark:text-white mt-2">
-                  Fill in the form to start a conversation
+                  Fill in the form and let us get in touch
                 </p>
 
                 <div className="flex items-center mt-8 text-white dark:text-white">

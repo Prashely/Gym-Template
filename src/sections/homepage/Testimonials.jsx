@@ -29,8 +29,8 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="bg-black py-4">
-      <h2 className="text-4xl text-white font-bold text-center mb-4">
+    <section className="bg-black py-8">
+      <h2 className="text-4xl text-white font-bold text-center my-4">
         TESTIMONIALS
       </h2>
       <div className="w-full flex justify-center">
@@ -51,7 +51,7 @@ const Testimonials = () => {
           ))}
         </div>
       </div>
-      <div>
+      <div className="my-4">
         <p className="text-center">
           Are you a member?
           <a href="#" target="_blank" className="ml-1 underline text-white">

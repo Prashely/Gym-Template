@@ -20,6 +20,15 @@ const Footer = () => {
           <br />
           Providing reliable Gyms since 2000
         </p>
+        <p className="my-4">
+          <span className="font-bold text-md"> Mon - Fri</span>
+          <br />
+          4:30 AM - 8:00 PM
+          <br />
+          <span className="font-bold text-md">Sat - Sun</span>
+          <br />
+          7:00 AM - 12:00 PM
+        </p>
         <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
       </aside>
       <nav>

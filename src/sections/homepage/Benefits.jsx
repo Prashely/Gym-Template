@@ -1,13 +1,13 @@
 import React from "react";
 import { FaRegCheckCircle } from "react-icons/fa";
-import Eight from "../../assets/images/8.jpg";
+import One from "../../assets/images/1.jpg";
 
 const Benefits = () => {
   return (
     <section
       className="relative bg-center bg-cover bg-no-repeat text-white py-8"
       style={{
-        backgroundImage: `url(${Eight})`, // Replace with your image URL
+        backgroundImage: `url(${One})`, // Replace with your image URL
         backgroundAttachment: "fixed", // This gives the parallax effect
       }}
     >
