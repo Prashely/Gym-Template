@@ -18,7 +18,7 @@ const HeroSection = () => {
             touch asap. No commitments.
           </p>
         </div>
-        <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+        <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mb-0">
           <form className="card-body">
             <div className="form-control">
               <label className="label">
@@ -42,7 +42,7 @@ const HeroSection = () => {
                 required
               />
             </div>
-            <div className="form-control mt-6">
+            <div className="form-control mt-1">
               <button className="btn btn-primary">Call Me</button>
             </div>
             <p className="text-xs text-center">
