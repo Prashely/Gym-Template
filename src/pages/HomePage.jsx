@@ -9,7 +9,6 @@ import ContactUs from "../sections/homepage/ContactUs";
 import Testimonials from "../sections/homepage/Testimonials";
 import Pricing from "../sections/homepage/Pricing";
 import ImageGrid from "../sections/homepage/ImageGrind";
-
 const HomePage = () => {
   return (
     <div className="flex flex-col min-h-screen bg-bgPrimary">
@@ -18,6 +17,7 @@ const HomePage = () => {
       </nav>
       <main className="flex-grow">
         <HeroSection />
+
         <WhyUs />
         <Benefits />
         <Pricing />
