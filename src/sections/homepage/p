@@ -1,0 +1,33 @@
+<section className=" w-full flex justify-center items-center">
+  <div className="hero bg-bgPrimary min-h-screen">
+    <div className="hero-content flex-col  item lg:flex-row-reverse">
+      <div>
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+          className="max-w-sm rounded-lg shadow-2xl"
+        />
+        <h1 className="text-2xl font-bold text-center text-black">
+          A Gym That Gives You More - Fitness Beyond Limits.
+        </h1>
+        <p className="py-2 text-center">
+          Welcome to your next chapter. Please leave your contacts below and
+          we'll get in touch asap.
+        </p>
+      </div>
+      <div>
+        <form action="">
+          <input
+            type="text"
+            placeholder="Prashely"
+            className="input input-bordered w-full max-w-xs"
+          />
+          <input
+            type="text"
+            placeholder="068 392 8066"
+            className="input input-bordered w-full max-w-xs"
+          />
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

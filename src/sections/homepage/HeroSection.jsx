@@ -3,22 +3,49 @@ import Form from "../../assets/components/ui/Form";
 
 const HeroSection = () => {
   return (
-    <div>
-      <div className="hero bg-bgPrimary min-h-screen">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-            className="max-w-sm rounded-lg shadow-2xl"
-          />
-          <div>
-            <h1 className="text-5xl font-bold text-center">Box Office News!</h1>
-            <p className="py-2 text-center">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+    <div className="hero bg-base-200 min-h-screen">
+      <div className="hero-content flex-col lg:flex-row-reverse">
+        <div className="text-center lg:text-left">
+          <h1 className="text-3xl font-bold">
+            A Gym That Gives You More - Fitness Beyond Limits.
+          </h1>
+          <p className="py-6">
+            Welcome to your next chapter, we are thrilled to have you join us -
+            best gym in town. Please leave your contacts below and we'll get in
+            touch asap. No commitments.
+          </p>
+        </div>
+        <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+          <form className="card-body">
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Name</span>
+              </label>
+              <input
+                type="text"
+                placeholder="Prashely Maluleke"
+                className="input input-bordered"
+                required
+              />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Password</span>
+              </label>
+              <input
+                type="text"
+                placeholder="068 392 8066"
+                className="input input-bordered"
+                required
+              />
+            </div>
+            <div className="form-control mt-6">
+              <button className="btn btn-primary">Call Me</button>
+            </div>
+            <p className="text-xs text-center">
+              Don’t worry, we won’t show your contact details to anyone.
             </p>
-          </div>
-          <Form />
+          </form>
         </div>
       </div>
     </div>
