@@ -1,4 +1,10 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, {
+  useEffect,
+  useState,
+  useRef,
+  useCallback,
+  useMemo,
+} from "react";
 import { GoDot, GoDotFill } from "react-icons/go";
 import Reasons from "../../assets/components/ui/Reasons";
 import Twelve from "../../assets/images/12.jpg";
@@ -12,90 +18,105 @@ const WhyUs = () => {
   const [activeItem, setActiveItem] = useState(1); // Track the active card
   const carouselRef = useRef(null);
 
+  // Memoize the list of items to prevent re-calculation on every render
+  const items = useMemo(() => {
+    return [
+      {
+        id: 1,
+        image: Twelve,
+        icon: <BiDumbbell />,
+        title: "Personal Trainer",
+        description:
+          "We have coaches with a ton of experience ready to help you achieve all your body goals",
+      },
+      {
+        id: 2,
+        image: Seven,
+        icon: <HiUserGroup />,
+        title: "Group Classes",
+        description:
+          "Want to stay motivated and consistent? We offer group classes to help you stay on track.",
+      },
+      {
+        id: 3,
+        image: Eleven,
+        icon: <IoMdPricetags />,
+        title: "Variety of Plans",
+        description:
+          "We offer plans for students, families, and everyone else that fits your budget.",
+      },
+    ];
+  }, []); // The empty array means this will only be calculated once
+
+  // Use callback to memoize the function
+  const handleItemClick = useCallback((index) => {
+    setActiveItem(index);
+  }, []);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const index = parseInt(entry.target.getAttribute("data-index"));
-            // Update activeItem only if it changes
             if (index !== activeItem) {
               setActiveItem(index);
             }
           }
         });
       },
-      { threshold: 0.6 }
+      {
+        threshold: 0.6, // Adjust threshold for sensitivity
+      }
     );
 
-    const items = document.querySelectorAll(".carousel-item");
-    items.forEach((item) => observer.observe(item));
+    const carouselItems = document.querySelectorAll(".carousel-item");
+    carouselItems.forEach((item) => observer.observe(item));
 
     return () => observer.disconnect();
-  }, [activeItem]);
+  }, [activeItem]); // Only re-run effect if `activeItem` changes
 
   return (
     <section className="w-full flex flex-col items-center justify-center my-6 ">
       <h2 className="text-xl text-bgPrimary font-semibold text-center mb-4 tracking-tighter ">
         Personal Training <span className="text-bgSecondary">+</span> Group
-        classes <span className="text-bgSecondary">+</span> Affordable Rates
+        Classes <span className="text-bgSecondary">+</span> Affordable Rates
       </h2>
       <div className="w-full flex flex-col justify-center">
         <div
           ref={carouselRef}
           className="carousel carousel-center rounded-box space-x-6 p-4"
         >
-          <div id="item1" className="carousel-item" data-index="1">
-            <Reasons
-              imageSrc={Twelve}
-              icon={<BiDumbbell />}
-              title="Personal Trainer"
-              description="We have coaches with a ton of experience ready to help you achieve all your body goals"
-            />
-          </div>
-          <div id="item2" className="carousel-item" data-index="2">
-            <Reasons
-              imageSrc={Seven}
-              icon={<HiUserGroup />}
-              title="Group Classes"
-              description="Want to stay motivated and consistent in your fitness Journey, Your Gym Name offers a variety of group classes to help you stay consistent and reach your body goals"
-            />
-          </div>
-          <div id="item3" className="carousel-item" data-index="3">
-            <Reasons
-              imageSrc={Eleven}
-              icon={<IoMdPricetags />}
-              title="Variety of Plans"
-              description="Are you scholar, student, spouse, parent or even a grandparent? Your Gym Name offers a variety of plans that suit your your budget."
-            />
-          </div>
+          {items.map((item) => (
+            <div
+              key={item.id}
+              id={`item${item.id}`}
+              className="carousel-item"
+              data-index={item.id}
+            >
+              <Reasons
+                imageSrc={item.image}
+                icon={item.icon}
+                title={item.title}
+                description={item.description}
+              />
+            </div>
+          ))}
         </div>
         <div className="flex w-full justify-center gap-2 py-2">
-          <a href="#item1" className="bg-white">
-            {activeItem === 1 ? (
-              <GoDotFill className="transition-all duration-200 ease-in-out text-xl text-bgPrimary" />
-            ) : (
-              <GoDot className="transition-all duration-200 ease-in-out text-xl" />
-            )}
-          </a>
-          <a href="#item2" className="bg-white">
-            {activeItem === 2 ? (
-              <GoDotFill className="transition-all duration-200 ease-in-out text-xl text-bgPrimary" />
-            ) : (
-              <GoDot className="transition-all duration-200 ease-in-out text-xl" />
-            )}
-          </a>
-          <a href="#item3" className="bg-white">
-            {activeItem === 3 ? (
-              <GoDotFill className="transition-all duration-200 ease-in-out text-xl text-bgPrimary" />
-            ) : (
-              <GoDot className="transition-all duration-200 ease-in-out text-xl" />
-            )}
-          </a>
+          {items.map((item) => (
+            <a key={item.id} href={`#item${item.id}`} className="bg-white">
+              {activeItem === item.id ? (
+                <GoDotFill className="transition-all duration-200 ease-in-out text-xl text-bgPrimary" />
+              ) : (
+                <GoDot className="transition-all duration-200 ease-in-out text-xl" />
+              )}
+            </a>
+          ))}
         </div>
       </div>
     </section>
   );
 };
 
-export default WhyUs;
+export default React.memo(WhyUs);
