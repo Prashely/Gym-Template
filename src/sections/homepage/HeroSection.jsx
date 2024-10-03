@@ -29,7 +29,7 @@ const HeroSection = () => {
           </p>
         </div>
         <div>
-          <div className="card w-full max-w-sm shrink-0 shadow-2xl bg-bgPrimary mb-0">
+          <div className="card w-full md:w-[370px] shrink-0 shadow-2xl bg-bgPrimary mb-0">
             <form className="card-body">
               <div className="form-control">
                 <label className="label">
