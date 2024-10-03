@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,6 +24,10 @@ body {
 .custom-tab-active {
   background-color: #fca311 !important; /* Uses the bgSecondary color */
   color: white !important; /* Ensures text color stays white */
+}
+
+.carousel-item {
+  transition: transform 0.3s ease-in-out;
 }
 
 input {
