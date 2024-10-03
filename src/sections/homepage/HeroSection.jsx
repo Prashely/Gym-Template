@@ -9,15 +9,18 @@ import Two from "../../assets/images/2.jpg";
 const HeroSection = () => {
   return (
     <section
-      className="hero min-h-screen bg-bgPrimary  bg-center bg-cover bg-no-repeat"
+      className="hero min-h-screen relative bg-center bg-cover bg-no-repeat"
       style={{
-        backgroundImage: `url(${Two})`, // Replace with your image URL
-        backgroundAttachment: "fixed", // This gives the parallax effect
+        backgroundImage: `url(${Two})`,
+        backgroundAttachment: "fixed",
       }}
     >
-      <div className="hero-content flex-col lg:flex-row-reverse mb-4">
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black opacity-60"></div>
+
+      <div className="hero-content flex-col lg:flex-row-reverse mb-4 relative z-10">
         <div className="text-center lg:text-left">
-          <h1 className="text-3xl text-white font-bold">
+          <h1 className="text-3xl text-white font-black">
             A Gym That Gives You More - Fitness Beyond Limits.
           </h1>
           <p className="text-white py-3">
@@ -26,7 +29,7 @@ const HeroSection = () => {
             touch asap. No commitments.
           </p>
         </div>
-        <div className="card  w-full max-w-sm shrink-0 shadow-2xl bg-bgPrimary mb-0">
+        <div className="card w-full max-w-sm shrink-0 shadow-2xl bg-bgPrimary mb-0">
           <form className="card-body">
             <div className="form-control">
               <label className="label">
