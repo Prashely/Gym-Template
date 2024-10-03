@@ -38,7 +38,7 @@ const Testimonials = () => {
           {reviews.map((review, index) => (
             <div className="carousel-item w-[85vw]" key={index}>
               <div className="p-6 bg-white rounded-2xl shadow-lg text-center">
-                <FaQuoteLeft className="text-4xl text-black mx-auto mb-4" />
+                <FaQuoteLeft className="text-4xl text-bgPrimary mx-auto mb-4" />
                 <p className="text-lg text-gray-600 dark:text-black">
                   {review.text}
                 </p>

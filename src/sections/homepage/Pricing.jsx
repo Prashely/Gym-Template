@@ -84,9 +84,7 @@ const Pricing = () => {
             <a
               key={tab.id}
               className={`tab ${
-                activeTab === tab.id
-                  ? "tab-active bg-bgSecondary text-white"
-                  : ""
+                activeTab === tab.id ? "tab-active custom-tab-active" : ""
               }`}
               onClick={() => setActiveTab(tab.id)}
             >

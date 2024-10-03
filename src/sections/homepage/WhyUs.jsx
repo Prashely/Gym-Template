@@ -73,23 +73,23 @@ const WhyUs = () => {
         <div className="flex w-full justify-center gap-2 py-2">
           <a href="#item1" className="bg-white">
             {activeItem === 1 ? (
-              <GoDotFill className="transition-all duration-500 ease-in-out text-xl text-bgPrimary" />
+              <GoDotFill className="transition-all duration-200 ease-in-out text-xl text-bgPrimary" />
             ) : (
-              <GoDot className="transition-all duration-500 ease-in-out text-xl" />
+              <GoDot className="transition-all duration-200 ease-in-out text-xl" />
             )}
           </a>
           <a href="#item2" className="bg-white">
             {activeItem === 2 ? (
-              <GoDotFill className="transition-all duration-500 ease-in-out text-xl text-bgPrimary" />
+              <GoDotFill className="transition-all duration-200 ease-in-out text-xl text-bgPrimary" />
             ) : (
-              <GoDot className="transition-all duration-500 ease-in-out text-xl" />
+              <GoDot className="transition-all duration-200 ease-in-out text-xl" />
             )}
           </a>
           <a href="#item3" className="bg-white">
             {activeItem === 3 ? (
-              <GoDotFill className="transition-all duration-500 ease-in-out text-xl text-bgPrimary" />
+              <GoDotFill className="transition-all duration-200 ease-in-out text-xl text-bgPrimary" />
             ) : (
-              <GoDot className="transition-all duration-500 ease-in-out text-xl" />
+              <GoDot className="transition-all duration-200 ease-in-out text-xl" />
             )}
           </a>
         </div>
