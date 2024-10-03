@@ -3,16 +3,24 @@ import { FcGoogle } from "react-icons/fc";
 import { FaStar } from "react-icons/fa";
 import { BsPeopleFill } from "react-icons/bs";
 import { IoLocationSharp } from "react-icons/io5";
+import Logo from "../../assets/images/Logo.png";
 
 const HeroSection = () => {
   return (
-    <div className="hero bg-base-200 min-h-screen">
-      <div className="hero-content flex-col lg:flex-row-reverse">
+    <section className="hero bg-base-200 min-h-screen">
+      <div className="hero-content flex-col lg:flex-row-reverse mb-4">
+        <div>
+          <img
+            src={Logo}
+            alt="Logo"
+            className="logo w-96 h-96 object-contain"
+          />
+        </div>
         <div className="text-center lg:text-left">
           <h1 className="text-3xl font-bold">
             A Gym That Gives You More - Fitness Beyond Limits.
           </h1>
-          <p className="py-6">
+          <p className="py-3">
             Welcome to your next chapter, we are thrilled to have you join us -
             best gym in town. Please leave your contacts below and we'll get in
             touch asap. No commitments.
@@ -50,7 +58,7 @@ const HeroSection = () => {
             </p>
           </form>
         </div>
-        <div className="w-full flex gap-5 justify-center">
+        <div className="w-full flex gap-5 justify-center mb-2">
           <div className="text-center">
             <div className="flex gap-1 items-center">
               <span>
@@ -85,7 +93,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -4,11 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        bgPrimary: "#e8e8e8",
-        hoverEffect: "#b7b7b7",
-        bgSecondary: "#8c8c8c",
-        buttonIcons: "#525252",
-        bgTertiary: "#000000",
+        bgPrimary: "#14213d" /* Blue */,
+        bgSecondary: "#fca311" /* Yellow */,
+        bgTertiary: "#313638" /* Black */,
       },
     },
   },

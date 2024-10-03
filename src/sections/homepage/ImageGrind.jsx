@@ -5,12 +5,12 @@ import Eight from "../../assets/images/8.jpg";
 
 const ImageGrid = () => {
   return (
-    <section className="w-full py-8">
+    <section className="w-full py-2 bg-white">
       <div className="container mx-auto px-4">
         {/* Flex container for two main grids */}
-        <div className="flex flex-col lg:flex-row gap-4">
+        <div className="flex justify-center gap-4">
           {/* First Grid: Single Image */}
-          <div className="w-full lg:w-1/2 flex-grow flex-shrink min-w-0">
+          <div className="w-[40vw] min-w-0">
             <img
               src={Nine}
               alt="Image 1"
@@ -19,7 +19,7 @@ const ImageGrid = () => {
           </div>
 
           {/* Second Grid: Two Images Stacked */}
-          <div className="flex flex-col w-full lg:w-1/2 gap-4 flex-grow flex-shrink min-w-0">
+          <div className="flex flex-col w-[40vw] gap-3">
             <img
               src={Ten}
               alt="Image 2"

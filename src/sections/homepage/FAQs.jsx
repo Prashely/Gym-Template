@@ -2,10 +2,12 @@ import React from "react";
 
 const FAQs = () => {
   return (
-    <section className="w-full  flex flex-col items-center justify-center bg-bgPrimary sm:gap-2 my-6">
-      <h2 className="text-4xl font-bold text-black mb-4">FAQs</h2>
+    <section className="w-full  flex flex-col items-center justify-center bg-bgSecondary sm:gap-2 my-6">
+      <h2 className="font-bold text-4xl text-bgPrimary my-6 tracking-tighter ">
+        FAQs
+      </h2>
       <div className="w-[95vw]">
-        <div className="collapse collapse-arrow bg-bgTertiary mb-0.5 ">
+        <div className="collapse collapse-arrow bg-bgPrimary text-white mb-0.5 ">
           <input type="radio" name="my-accordion-2" defaultChecked />
           <div className="collapse-title text-xl font-medium">
             Do I need to be Fit to join the gym?
@@ -18,7 +20,7 @@ const FAQs = () => {
             </p>
           </div>
         </div>
-        <div className="collapse collapse-arrow bg-bgTertiary mb-0.5">
+        <div className="collapse collapse-arrow bg-bgPrimary text-white mb-0.5">
           <input type="radio" name="my-accordion-2" />
           <div className="collapse-title text-xl font-medium">
             Can I join as a beginner?
@@ -32,7 +34,7 @@ const FAQs = () => {
             </p>
           </div>
         </div>
-        <div className="collapse collapse-arrow bg-bgTertiary mb-0.5">
+        <div className="collapse collapse-arrow bg-bgPrimary text-white mb-0.5">
           <input type="radio" name="my-accordion-2" />
           <div className="collapse-title text-xl font-medium">
             Can I cancel my subscription anytime?
@@ -45,7 +47,7 @@ const FAQs = () => {
             </p>
           </div>
         </div>
-        <div className="collapse collapse-arrow bg-bgTertiary mb-0.5">
+        <div className="collapse collapse-arrow bg-bgPrimary text-white mb-0.5">
           <input type="radio" name="my-accordion-2" />
           <div className="collapse-title text-xl font-medium">
             What are the gym's operating hours?

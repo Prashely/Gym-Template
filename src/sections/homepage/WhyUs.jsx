@@ -37,7 +37,8 @@ const WhyUs = () => {
   return (
     <section className="w-full flex flex-col items-center justify-center my-6">
       <h2 className="text-4xl text-black font-bold text-center mb-4">
-        WHY CHOOSE US?
+        Personal Training <span>+</span> Group classes <span>+</span> Affordable
+        Rates
       </h2>
       <div className="w-full flex flex-col justify-center">
         <div
