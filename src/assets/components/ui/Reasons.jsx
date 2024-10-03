@@ -1,6 +1,8 @@
 import React from "react";
 
 const Reasons = ({ imageSrc, title, description, icon }) => {
+  console.log("Reasons component rendered"); // For checking unnecessary renders
+
   return (
     <div className="relative w-[95vw] h-[450px] overflow-hidden rounded-lg shadow-lg">
       <img
@@ -18,4 +20,5 @@ const Reasons = ({ imageSrc, title, description, icon }) => {
   );
 };
 
+// Memoize the component to prevent re-renders unless props change
 export default React.memo(Reasons);
