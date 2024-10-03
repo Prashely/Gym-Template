@@ -18,21 +18,21 @@ const WhyUs = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const index = parseInt(entry.target.getAttribute("data-index"));
-            setActiveItem(index);
+            // Update activeItem only if it changes
+            if (index !== activeItem) {
+              setActiveItem(index);
+            }
           }
         });
       },
-      {
-        threshold: 0.6, // Adjust threshold for sensitivity
-      }
+      { threshold: 0.6 }
     );
 
     const items = document.querySelectorAll(".carousel-item");
     items.forEach((item) => observer.observe(item));
 
-    // Cleanup observer on component unmount
     return () => observer.disconnect();
-  }, []);
+  }, [activeItem]);
 
   return (
     <section className="w-full flex flex-col items-center justify-center my-6 ">
