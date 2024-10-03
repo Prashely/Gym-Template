@@ -2,7 +2,7 @@ import React from "react";
 
 const FAQs = () => {
   return (
-    <section className="w-full  flex flex-col items-center justify-center bg-bgSecondary sm:gap-2 my-6">
+    <section className="w-full  flex flex-col items-center justify-center bg-bgSecondary  mt-6 m">
       <h2 className="font-bold text-4xl text-bgPrimary my-6 tracking-tighter ">
         FAQs
       </h2>

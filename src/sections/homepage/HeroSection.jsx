@@ -7,7 +7,7 @@ import Logo from "../../assets/images/Logo.png";
 
 const HeroSection = () => {
   return (
-    <section className="hero bg-base-200 min-h-screen">
+    <section className="hero bg-base-200 min-h-screen bg-bgPrimary">
       <div className="hero-content flex-col lg:flex-row-reverse mb-4">
         <div>
           <img
@@ -26,7 +26,7 @@ const HeroSection = () => {
             touch asap. No commitments.
           </p>
         </div>
-        <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mb-0">
+        <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl bg-bgPrimary mb-0">
           <form className="card-body">
             <div className="form-control">
               <label className="label">
@@ -35,25 +35,27 @@ const HeroSection = () => {
               <input
                 type="text"
                 placeholder="Prashely Maluleke"
-                className="input input-bordered"
+                className="input input-bordered bg-white"
                 required
               />
             </div>
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Password</span>
+                <span className="label-text">Phone Number</span>
               </label>
               <input
                 type="text"
                 placeholder="068 392 8066"
-                className="input input-bordered"
+                className="input input-bordered bg-white"
                 required
               />
             </div>
             <div className="form-control mt-1">
-              <button className="btn btn-primary">Call Me</button>
+              <button className="btn btn-primary bg-bgSecondary text-bgPrimary">
+                Call Me
+              </button>
             </div>
-            <p className="text-xs text-center">
+            <p className="text-xs text-center text-white font-light">
               Don’t worry, we won’t show your contact details to anyone.
             </p>
           </form>
