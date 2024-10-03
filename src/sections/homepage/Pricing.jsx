@@ -67,11 +67,11 @@ const Pricing = () => {
 
   return (
     <section className="w-full flex flex-col justify-center items-center bg-white my-8">
-      <div className="my-1 tracking-tighter">
+      <div className="my-1 tracking-tighter text-center px-6">
         <h2 className="font-bold text-4xl text-bgPrimary text-center">
           PRICING
         </h2>
-        <span className="text-bgPrimary">
+        <span className=" text-bgPrimary">
           <span className="text-bgSecondary">*</span>the longer your contract
           the less you <span className="text-bgSecondary">PAY</span>, We value
           commitment and loyalty.
