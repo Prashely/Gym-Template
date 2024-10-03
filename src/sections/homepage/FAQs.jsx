@@ -6,7 +6,7 @@ const FAQs = () => {
       <h2 className="font-bold text-4xl text-bgPrimary my-6 tracking-tighter ">
         FAQs
       </h2>
-      <div className="w-[95vw]">
+      <div className="w-[95vw] md:w-[750px]">
         <div className="collapse collapse-arrow bg-bgPrimary text-white mb-0.5 ">
           <input type="radio" name="my-accordion-2" defaultChecked />
           <div className="collapse-title text-xl font-medium">
@@ -63,7 +63,7 @@ const FAQs = () => {
         </div>
       </div>
       <div className="my-6">
-        <p className="text-xl text-black font-black">
+        <p className="text-xl text-bgPrimary font-black">
           HEALTHY BODY, HEALTHY MIND
         </p>
       </div>

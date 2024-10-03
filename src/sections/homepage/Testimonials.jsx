@@ -36,7 +36,10 @@ const Testimonials = () => {
       <div className="w-full flex justify-center">
         <div className="carousel carousel-center rounded-box space-x-4 p-4 smooth">
           {reviews.map((review, index) => (
-            <div className="carousel-item w-[85vw]" key={index}>
+            <div
+              className="carousel-item w-[85vw] md:w-[400px] lg:w-[400px]"
+              key={index}
+            >
               <div className="p-6 bg-white rounded-2xl shadow-lg text-center">
                 <FaQuoteLeft className="text-4xl text-bgPrimary mx-auto mb-4" />
                 <p className="text-lg text-gray-600 dark:text-black">

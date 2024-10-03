@@ -8,7 +8,7 @@ const ImageGrid = () => {
     <section className="w-full py-2 bg-white">
       <div className="container mx-auto px-4">
         {/* Flex container for two main grids */}
-        <div className="flex justify-center gap-4">
+        <div className="md:h-[500px] flex justify-center gap-4">
           {/* First Grid: Single Image */}
           <div className="w-[40vw] min-w-0">
             <img

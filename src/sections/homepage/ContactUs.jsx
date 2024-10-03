@@ -7,12 +7,12 @@ import { FaClock } from "react-icons/fa";
 const ContactUs = () => {
   return (
     <section className="w-full flex flex-col items-center justify-center my-8 bg-white">
-      <h2 className="font-bold text-xl text-bgPrimary my-6 tracking-tighter ">
+      <h2 className="font-bold text-xl lg:text-3xl text-bgPrimary my-6 tracking-tighter ">
         Your Fitness Journey Starts Here.
       </h2>
-      <div className="bg-bgPrimary  p-4 rounded-2xl w-[95vw] md:w-full">
+      <div className="bg-bgPrimary  p-4 rounded-2xl w-[95vw] lg:w-[1000px]">
         <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
-          <div className="mt-8 overflow-hidden">
+          <div className="mt-8 md:mb-8 overflow-hidden">
             <div className=" grid grid-cols-1 md:grid-cols-2">
               <div className=" w-full p-6 mr-2 bg-bgSecondary dark:bg-buttonIcons rounded-2xl">
                 <h1 className="text-4xl sm:text-5xl text-bgPrimary font-extrabold tracking-tight">
