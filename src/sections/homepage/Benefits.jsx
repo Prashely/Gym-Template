@@ -16,11 +16,11 @@ const Benefits = () => {
       <div className="relative z-10 flex flex-col items-start ml-6 mt-14">
         <div>
           <p className="font-black tracking-tighter mb-4">
-            HEALTH ZONE FITNESS CENTER
+            YOU GYM NAME CENTER
           </p>
           <h2 className="text-2xl text-left font-black mb-4 tracking-tighter">
             JOIN THE BEST GYM IN
-            <span className="text-4xl block">MOKOPANE.</span>
+            <span className="text-4xl block text-bgSecondary">MOKOPANE.</span>
           </h2>
         </div>
         <div>
@@ -36,30 +36,30 @@ const Benefits = () => {
         <div>
           <ul className="flex flex-col justify-center gap-2 text-lg ">
             <li className="flex items-center">
-              <FaRegCheckCircle className="text-yellow-500 mr-2 text-2xl font-black" />{" "}
+              <FaRegCheckCircle className="text-bgSecondary mr-2 text-2xl font-black" />{" "}
               Free internet
             </li>
             <li className="flex items-center">
-              <FaRegCheckCircle className="text-yellow-500 mr-2 text-2xl font-black" />{" "}
+              <FaRegCheckCircle className="text-bgSecondary mr-2 text-2xl font-black" />{" "}
               Showers & Steam Rooms
             </li>
             <li className="flex items-center">
-              <FaRegCheckCircle className="text-yellow-500 mr-2 text-2xl font-black" />{" "}
+              <FaRegCheckCircle className="text-bgSecondary mr-2 text-2xl font-black" />{" "}
               Flexible class schedules
             </li>
             <li className="flex items-center">
-              <FaRegCheckCircle className="text-yellow-500 mr-2 text-2xl font-black" />{" "}
+              <FaRegCheckCircle className="text-bgSecondary mr-2 text-2xl font-black" />{" "}
               Expert coaching
             </li>
             <li className="flex items-center">
-              <FaRegCheckCircle className="text-yellow-500 mr-2 text-2xl font-black" />{" "}
+              <FaRegCheckCircle className="text-bgSecondary mr-2 text-2xl font-black" />{" "}
               Parking
             </li>
           </ul>
         </div>
 
         {/* Call to Action */}
-        <button className="mt-6 px-6 py-3 bg-yellow-500 text-black font-bold rounded-md">
+        <button className="mt-6 px-6 py-3 bg-bgSecondary text-black font-bold rounded-md">
           Join Us
         </button>
       </div>

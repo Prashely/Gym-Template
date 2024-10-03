@@ -35,15 +35,15 @@ const WhyUs = () => {
   }, []);
 
   return (
-    <section className="w-full flex flex-col items-center justify-center my-6">
-      <h2 className="text-4xl text-black font-bold text-center mb-4">
-        Personal Training <span>+</span> Group classes <span>+</span> Affordable
-        Rates
+    <section className="w-full flex flex-col items-center justify-center my-6 ">
+      <h2 className="text-xl text-bgPrimary font-semibold text-center mb-4 tracking-tighter ">
+        Personal Training <span className="text-bgSecondary">+</span> Group
+        classes <span className="text-bgSecondary">+</span> Affordable Rates
       </h2>
       <div className="w-full flex flex-col justify-center">
         <div
           ref={carouselRef}
-          className="carousel carousel-center bg-bgPrimary rounded-box space-x-6 p-4"
+          className="carousel carousel-center rounded-box space-x-6 p-4"
         >
           <div id="item1" className="carousel-item" data-index="1">
             <Reasons
@@ -58,7 +58,7 @@ const WhyUs = () => {
               imageSrc={Seven}
               icon={<HiUserGroup />}
               title="Group Classes"
-              description="Want to stay motivated and consistent in your fitness Journey, Health Zone offers a variety of group classes to help you stay consistent and reach your body goals"
+              description="Want to stay motivated and consistent in your fitness Journey, Your Gym Name offers a variety of group classes to help you stay consistent and reach your body goals"
             />
           </div>
           <div id="item3" className="carousel-item" data-index="3">
@@ -66,28 +66,28 @@ const WhyUs = () => {
               imageSrc={Eleven}
               icon={<IoMdPricetags />}
               title="Variety of Plans"
-              description="Are you scholar, student, spouse, parent or even a grandparent? Health Zone offers a variety of plans that suit your your budget."
+              description="Are you scholar, student, spouse, parent or even a grandparent? Your Gym Name offers a variety of plans that suit your your budget."
             />
           </div>
         </div>
         <div className="flex w-full justify-center gap-2 py-2">
-          <a href="#item1" className="bg-bgPrimary">
+          <a href="#item1" className="bg-white">
             {activeItem === 1 ? (
-              <GoDotFill className="transition-all duration-500 ease-in-out text-xl text-black" />
+              <GoDotFill className="transition-all duration-500 ease-in-out text-xl text-bgPrimary" />
             ) : (
               <GoDot className="transition-all duration-500 ease-in-out text-xl" />
             )}
           </a>
-          <a href="#item2" className="bg-bgPrimary">
+          <a href="#item2" className="bg-white">
             {activeItem === 2 ? (
-              <GoDotFill className="transition-all duration-500 ease-in-out text-xl text-black" />
+              <GoDotFill className="transition-all duration-500 ease-in-out text-xl text-bgPrimary" />
             ) : (
               <GoDot className="transition-all duration-500 ease-in-out text-xl" />
             )}
           </a>
-          <a href="#item3" className="bg-bgPrimary">
+          <a href="#item3" className="bg-white">
             {activeItem === 3 ? (
-              <GoDotFill className="transition-all duration-500 ease-in-out text-xl text-black" />
+              <GoDotFill className="transition-all duration-500 ease-in-out text-xl text-bgPrimary" />
             ) : (
               <GoDot className="transition-all duration-500 ease-in-out text-xl" />
             )}

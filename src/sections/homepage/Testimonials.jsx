@@ -16,28 +16,28 @@ const Testimonials = () => {
         {Array(fullStars)
           .fill()
           .map((_, index) => (
-            <FaStar key={index} className="text-yellow-500" />
+            <FaStar key={index} className="text-bgSecondary" />
           ))}
-        {halfStar && <FaStarHalfAlt className="text-yellow-500" />}
+        {halfStar && <FaStarHalfAlt className="text-bgSecondary" />}
         {Array(emptyStars)
           .fill()
           .map((_, index) => (
-            <FaRegStar key={index} className="text-yellow-500" />
+            <FaRegStar key={index} className="text-bgSecondary" />
           ))}
       </div>
     );
   };
 
   return (
-    <section className="bg-black py-8">
-      <h2 className="text-4xl text-white font-bold text-center my-4">
+    <section className="bg-bgPrimary py-8">
+      <h2 className="font-bold text-4xl text-bgSecondary text-center my-6 tracking-tighter">
         TESTIMONIALS
       </h2>
       <div className="w-full flex justify-center">
         <div className="carousel carousel-center rounded-box space-x-4 p-4 smooth">
           {reviews.map((review, index) => (
             <div className="carousel-item w-[85vw]" key={index}>
-              <div className="p-6 bg-bgPrimary rounded-2xl shadow-lg text-center">
+              <div className="p-6 bg-white rounded-2xl shadow-lg text-center">
                 <FaQuoteLeft className="text-4xl text-black mx-auto mb-4" />
                 <p className="text-lg text-gray-600 dark:text-black">
                   {review.text}
@@ -54,7 +54,11 @@ const Testimonials = () => {
       <div className="my-4">
         <p className="text-center">
           Are you a member?
-          <a href="#" target="_blank" className="ml-1 underline text-white">
+          <a
+            href="#"
+            target="_blank"
+            className="ml-1 underline text-bgSecondary"
+          >
             Leave a review
           </a>
         </p>

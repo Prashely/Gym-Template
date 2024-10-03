@@ -66,18 +66,20 @@ const Pricing = () => {
   ];
 
   return (
-    <section className="w-full flex flex-col justify-center items-center my-8">
-      <h2 className="text-4xl font-bold text-black mb-4 text-center">
+    <section className="w-full flex flex-col justify-center items-center bg-white my-8">
+      <h2 className="font-bold text-4xl text-bgPrimary text-center my-6 tracking-tighter">
         PRICING
       </h2>
-      <div className="container w-[90vw] p-4 border-2 bg-black border-black rounded-2xl lg:shadow-none shadow-lg lg:relative relative lg:top-0 top-8 mb-8">
+      <div className="container w-[90vw] p-4 border-2 bg-bgPrimary rounded-2xl lg:shadow-none shadow-lg lg:relative relative lg:top-0 top-8 mb-8">
         {/* Tabs for Months */}
-        <div className="tabs tabs-boxed flex justify-center mb-3 bg-black lg:hidden ">
+        <div className="tabs tabs-boxed flex justify-center mb-3 bg-bgPrimary lg:hidden ">
           {tabs.map((tab) => (
             <a
               key={tab.id}
               className={`tab ${
-                activeTab === tab.id ? "tab-active bg-white text-black" : ""
+                activeTab === tab.id
+                  ? "tab-active bg-bgSecondary text-white"
+                  : ""
               }`}
               onClick={() => setActiveTab(tab.id)}
             >
@@ -142,7 +144,7 @@ const Pricing = () => {
         </div>
       </div>
       <div>
-        <button className="btn btn-wide mt-4 bg-black text-white">
+        <button className="btn w-[350px] mt-4 bg-bgSecondary text-bgPrimary">
           Download Prices
         </button>
       </div>

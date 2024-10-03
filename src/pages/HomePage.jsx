@@ -11,7 +11,7 @@ import Pricing from "../sections/homepage/Pricing";
 import ImageGrid from "../sections/homepage/ImageGrind";
 const HomePage = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-bgPrimary">
+    <div className="flex flex-col min-h-screen bg-white">
       <nav>
         <NavBar />
       </nav>
