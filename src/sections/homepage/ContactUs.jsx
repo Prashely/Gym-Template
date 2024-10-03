@@ -7,8 +7,8 @@ import { FaClock } from "react-icons/fa";
 const ContactUs = () => {
   return (
     <section className="w-full flex flex-col items-center justify-center my-8 bg-white">
-      <h2 className="font-bold text-4xl text-bgPrimary my-6 tracking-tighter">
-        SAY HELLO
+      <h2 className="font-bold text-xl text-bgPrimary my-6 tracking-tighter ">
+        Your Fitness Journey Starts Here.
       </h2>
       <div className="bg-bgPrimary  p-4 rounded-2xl w-[95vw] md:w-full">
         <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
@@ -18,27 +18,27 @@ const ContactUs = () => {
                 <h1 className="text-4xl sm:text-5xl text-bgPrimary font-extrabold tracking-tight">
                   Get in touch
                 </h1>
-                <p className="text-normal text-lg sm:text-2xl font-medium text-bgPrimary mt-2">
+                <p className="text-normal text-lg sm:text-2xl font-medium text-bgPrimary mt-2 tracking-tight">
                   Fill in the form and let us get in touch
                 </p>
 
                 <div className="flex items-center mt-8 text-bgPrimary">
                   <SlLocationPin className="w-6 h-6" />
-                  <div className="ml-4 text-md tracking-wide font-semibold ">
+                  <div className="ml-4 text-md tracking-tight font-semibold ">
                     Acme Inc, Street, State, Postal Code
                   </div>
                 </div>
                 <div className="flex items-center mt-4  text-bgPrimary">
                   <FiPhone className="w-6 h-6" />
-                  <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                    +44 1234567890
+                  <div className="ml-4 text-md tracking-tight font-semibold w-40">
+                    +27 68 392 8066
                   </div>
                 </div>
 
                 <div className="flex items-center mt-2  text-bgPrimary">
                   <MdOutlineEmail className="w-6 h-6" />
-                  <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                    info@acme.org
+                  <div className="ml-4 text-md tracking-tight font-semibold w-40">
+                    contact@prashely.com
                   </div>
                 </div>
                 <div className="flex items-center mt-2  text-bgPrimary">
@@ -46,7 +46,7 @@ const ContactUs = () => {
                   <div className="ml-4 text-md  font-semibold w-full">
                     Mon - Fri:
                     <span className="tracking-tighter font-normal ml-1">
-                      4:30AM - 8:00PM
+                      04:30 - 20:00PM
                     </span>
                   </div>
                 </div>

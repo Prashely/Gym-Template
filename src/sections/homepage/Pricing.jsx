@@ -90,21 +90,21 @@ const Pricing = () => {
 
         {/* Responsive grid for small screens */}
         <div className="lg:hidden grid grid-cols-2 gap-4">
-          <div className="flex flex-col text-center text-white font-light space-y-6 my-4">
+          <div className="flex flex-col  text-center text-white font-light space-y-10 my-4">
             {Object.values(pricingData).map((category, index) => (
-              <div key={index} className="text-lg">
+              <div key={index} className="text-xl">
                 {category.label}
               </div>
             ))}
           </div>
-          <div className="flex flex-col space-y-6 my-4">
+          <div className="flex flex-col space-y-10 my-4">
             {Object.values(pricingData).map((category, index) => (
               <div
                 key={index}
-                className="text-hoverEffect font-black text-lg text-center"
+                className="text-bgSecondary font-black text-lg text-center"
               >
                 {category.prices[activeTab]}
-                <span className="text-xs text-gray-400 font-light ml-0.5">
+                <span className="text-xs text-white font-light ml-0.5">
                   p/m
                 </span>
               </div>
@@ -144,7 +144,7 @@ const Pricing = () => {
         </div>
       </div>
       <div>
-        <button className="btn w-[350px] mt-4 bg-bgSecondary text-bgPrimary">
+        <button className="btn w-[250px] mt-4 bg-bgSecondary text-bgPrimary">
           Download Prices
         </button>
       </div>
