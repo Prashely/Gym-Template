@@ -16,13 +16,6 @@ const HeroSection = () => {
       }}
     >
       <div className="hero-content flex-col lg:flex-row-reverse mb-4">
-        <div>
-          <img
-            src={Logo}
-            alt="Logo"
-            className="logo w-96 h-96 object-contain"
-          />
-        </div>
         <div className="text-center lg:text-left">
           <h1 className="text-3xl text-white font-bold">
             A Gym That Gives You More - Fitness Beyond Limits.
