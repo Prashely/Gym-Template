@@ -36,14 +36,14 @@ const WhyUs = () => {
 
   return (
     <section className="w-full flex flex-col items-center justify-center my-6 ">
-      <h2 className="text-xl text-bgPrimary font-semibold text-center mb-4 tracking-tighter ">
+      <h2 className="text-xl lg:text-2xl text-bgPrimary font-semibold text-center mb-4 tracking-tighter ">
         Personal Training <span className="text-bgSecondary">+</span> Group
         classes <span className="text-bgSecondary">+</span> Affordable Rates
       </h2>
       <div className="w-full flex flex-col justify-center">
         <div
           ref={carouselRef}
-          className="carousel carousel-center rounded-box space-x-6 p-4"
+          className="carousel carousel-center lg:flex lg:justify-center rounded-box space-x-6 p-4"
         >
           <div id="item1" className="carousel-item" data-index="1">
             <Reasons
@@ -70,7 +70,7 @@ const WhyUs = () => {
             />
           </div>
         </div>
-        <div className="flex w-full justify-center gap-2 py-2">
+        <div className="lg:hidden flex w-full justify-center gap-2 py-2">
           <a href="#item1" className="bg-white">
             {activeItem === 1 ? (
               <GoDotFill className="transition-all duration-200 ease-in-out text-xl text-bgPrimary" />

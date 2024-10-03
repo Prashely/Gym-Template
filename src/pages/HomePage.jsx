@@ -17,7 +17,6 @@ const HomePage = () => {
       </nav>
       <main className="flex-grow">
         <HeroSection />
-
         <WhyUs />
         <Benefits />
         <Pricing />

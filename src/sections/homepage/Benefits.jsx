@@ -13,18 +13,20 @@ const Benefits = () => {
     >
       {/* Semi-transparent overlay */}
       <div className="absolute inset-0 bg-black opacity-75"></div>
-      <div className="relative z-10 flex flex-col items-start ml-6 mt-14">
+      <div className="relative z-10 flex flex-col md:justify-center md:items-center md:text-center items-start ml-6 mt-14">
         <div>
           <p className="font-black tracking-tighter mb-4">
             YOU GYM NAME CENTER
           </p>
           <h2 className="text-2xl text-left font-black mb-4 tracking-tighter">
             JOIN THE BEST GYM IN
-            <span className="text-4xl block text-bgSecondary">MOKOPANE.</span>
+            <span className="md:text-center text-4xl block text-bgSecondary">
+              MOKOPANE.
+            </span>
           </h2>
         </div>
         <div>
-          <p className="text-lg pr-7 mb-8">
+          <p className="md:w-[800px] text-lg pr-7 mb-8">
             Our gym offers everything you need to stay healthy, from a beautiful
             environment to a friendly staff. Our facilities are designed to make
             your workout experience unforgettable and Peaceful. With over 5
@@ -34,7 +36,7 @@ const Benefits = () => {
           </p>
         </div>
         <div>
-          <ul className="flex flex-col justify-center gap-2 text-lg ">
+          <ul className="flex flex-col md:flex-row md:w-[600px] md:flex-wrap justify-center gap-2 text-lg ">
             <li className="flex items-center">
               <FaRegCheckCircle className="text-bgSecondary mr-2 text-2xl font-black" />{" "}
               Free internet
@@ -59,7 +61,7 @@ const Benefits = () => {
         </div>
 
         {/* Call to Action */}
-        <button className="mt-6 px-6 py-3 bg-bgSecondary text-black font-bold rounded-md">
+        <button className="mt-6 px-6 py-3 bg-bgSecondary text-black font-bold rounded-md md:w-[200px]">
           Join Us
         </button>
       </div>
