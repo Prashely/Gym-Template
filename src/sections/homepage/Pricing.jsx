@@ -150,7 +150,7 @@ const Pricing = () => {
       </div>
       <div>
         <button className="btn w-[250px] mt-4 bg-bgSecondary text-bgPrimary">
-          Download Prices
+          Share Prices
         </button>
       </div>
     </section>
