@@ -38,3 +38,7 @@ body {
   color: #000000;
   margin: 1.5rem 0 1.5rem 0; /* Color of the text */
 }
+
+input {
+  color: #14213d;
+}
