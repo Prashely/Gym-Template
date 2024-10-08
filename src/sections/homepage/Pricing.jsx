@@ -118,13 +118,13 @@ const Pricing = () => {
         </div>
 
         {/* Responsive table for larger screens */}
-        <div className="hidden lg:block overflow-x-auto ">
-          <table className="table-auto w-full text-center border-collapse border border-gray-300 shadow-lg">
+        <div className="hidden lg:block overflow-x-auto border border-gray-300">
+          <table className="table-auto w-full text-center border-collapse border-gray-300 shadow-lg">
             <thead>
               <tr className="bg-bgPrimary text-white">
-                <th className="border border-gray-300 p-4">Category</th>
+                <th className="border  border-gray-300 p-8">Category</th>
                 {tabs.map((tab) => (
-                  <th key={tab.id} className="border border-gray-300 p-4">
+                  <th key={tab.id} className="border  border-gray-300 p-4">
                     {tab.label}
                   </th>
                 ))}
@@ -133,11 +133,11 @@ const Pricing = () => {
             <tbody>
               {Object.values(pricingData).map((category, index) => (
                 <tr key={index} className="bg-bgPrimary">
-                  <td className="border border-gray-300 font-semibold p-4">
+                  <td className="border-r  border-gray-300 font-semibold p-4">
                     {category.label}
                   </td>
                   {tabs.map((tab) => (
-                    <td key={tab.id} className="border border-gray-300 p-4">
+                    <td key={tab.id} className="border-r border-gray-300 p-4">
                       {category.prices[tab.id]}
                       <span className="text-xs text-white font-light">p/m</span>
                     </td>
