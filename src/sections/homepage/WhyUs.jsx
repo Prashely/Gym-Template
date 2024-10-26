@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef, useMemo } from "react";
 import { GoDot, GoDotFill } from "react-icons/go";
 import Reasons from "../../assets/components/ui/Reasons";
 import Twelve from "../../assets/images/12.jpg";
-import Seven from "../../assets/images/H7.jpg";
+import Seven from "../../assets/images/7.jpg";
 import Eleven from "../../assets/images/11.jpg";
 import { BiDumbbell } from "react-icons/bi";
 import { HiUserGroup } from "react-icons/hi2";
